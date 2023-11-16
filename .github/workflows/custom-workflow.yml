@@ -15,3 +15,5 @@ jobs:
           echo "Github repository: ${{ github.repository }}"
       - run: |
           echo "Github workspace: ${{ github.workspace }}"
+      - run: |
+          echo "Github actor: ${{ github.actor }}"
