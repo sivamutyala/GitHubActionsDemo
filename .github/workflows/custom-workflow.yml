@@ -19,3 +19,5 @@ jobs:
           echo "Github actor: ${{ github.actor }}"
       - run: |
           echo "Job status: ${{ job.status }}"
+      - run: |
+          echo "Github event name: ${{ github.event_name }}"
