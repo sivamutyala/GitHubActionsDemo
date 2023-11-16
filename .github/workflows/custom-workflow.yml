@@ -1,0 +1,17 @@
+name: custom-workflow
+run-name: ${{ github.actor }} is testing out Github actions
+'on': push
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: This is name in steps
+        run: echo "This is customized workflow."
+      - run: |
+          echo "OS name: ${{ runner.os }}"
+      - run: |
+          echo "Github branch: ${{ github.ref }}"
+      - run: |
+          echo "Github repository: ${{ github.repository }}"
+      - run: |
+          echo "Github workspace: ${{ github.workspace }}"
